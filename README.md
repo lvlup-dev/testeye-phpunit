@@ -1,10 +1,9 @@
-# :package_description
+# PHPUnit Listener to debug slow tests
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/:package_name.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/:package_name/run-tests?label=tests)](https://github.com/spatie/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/:package_name.svg?style=flat-square)](https://packagist.org/packages/spatie/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/slowtests.svg?style=flat-square)](https://packagist.org/packages/spatie/slowtests)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/slowtests/run-tests?label=tests)](https://github.com/spatie/slowtests/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/slowtests.svg?style=flat-square)](https://packagist.org/packages/spatie/slowtests)
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
 
 This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
 
@@ -23,7 +22,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require spatie/:package_name
+composer require spatie/slowtests
 ```
 
 ## Usage
@@ -53,7 +52,7 @@ If you discover any security related issues, please email freek@spatie.be instea
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Didier Sampaolo](https://github.com/dsampaolo)
 - [All Contributors](../../contributors)
 
 ## License

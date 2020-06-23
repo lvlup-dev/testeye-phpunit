@@ -1,36 +1,37 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "lvlup-dev/slowtests",
+    "description": "PHPUnit Listener to debug slow tests",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "lvlup",
+        "phpunit",
+        "slowtests"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/lvlup-dev/slowtests",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Didier Sampaolo",
+            "email": "didier@lvlup.fr",
+            "homepage": "https://lvlup.fr",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^7.3",
+        "phpunit/phpunit": "^9.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "phpunit/phpunit": "^9.0",
         "vimeo/psalm": "^3.11"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Lvlup\\SlowTests\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Lvlup\\SlowTests\\Tests\\": "tests"
         }
     },
     "scripts": {
