@@ -2,6 +2,7 @@
 
 namespace Lvlup\TestEye;
 
+use Exception;
 use GuzzleHttp\Client;
 use PHPUnit\Runner\AfterIncompleteTestHook;
 use PHPUnit\Runner\AfterLastTestHook;
@@ -95,6 +96,15 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
     public function executeAfterLastTest(): void
     {
         $client = new Client();
-        $client->post($this->endpoint . '/' . $this->token, $this->tests);
+
+        try {
+            $client->post($this->endpoint . '/' . $this->token, [
+                'form_params' => [
+                    'tests' => $this->tests,
+                ],
+            ]);
+        } catch (Exception $e) {
+            dd($e->getMessage());
+        }
     }
 }
