@@ -56,7 +56,7 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
     public function executeAfterSuccessfulTest(string $test, float $time): void
     {
         $this->tests[] = [
-            'outcome' => 'incomplete',
+            'outcome' => 'successfull',
             'test' => $test,
             'time' => $time,
         ];
