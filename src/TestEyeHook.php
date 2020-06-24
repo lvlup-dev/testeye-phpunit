@@ -1,6 +1,6 @@
 <?php
 
-namespace Lvlup\SlowTests;
+namespace Lvlup\TestEye;
 
 use GuzzleHttp\Client;
 use PHPUnit\Runner\AfterIncompleteTestHook;
