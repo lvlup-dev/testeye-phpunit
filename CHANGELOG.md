@@ -3,6 +3,11 @@
 All notable changes to `testeye` will be documented in this file
 
 
+## 0.1.4 - 2020-06-24
+
+- changed API endpoint
+
+
 ## 0.1.3 - 2020-06-24
 
 - fixed wrong outcome for some tests

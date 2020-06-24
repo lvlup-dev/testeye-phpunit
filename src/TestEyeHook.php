@@ -16,7 +16,7 @@ use PHPUnit\Runner\AfterTestWarningHook;
 class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterSkippedTestHook, AfterSuccessfulTestHook, AfterTestErrorHook, AfterTestFailureHook, AfterTestWarningHook, AfterLastTestHook
 {
     private $tests;
-    private $endpoint = "https://2f58e3b96ad5.ngrok.io";
+    private $endpoint = "https://2f58e3b96ad5.ngrok.io/report";
     private $token;
 
     public function __construct($token)
