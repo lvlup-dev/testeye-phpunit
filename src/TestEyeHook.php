@@ -16,6 +16,12 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
 {
     private $tests;
     private $endpoint = "https://2f58e3b96ad5.ngrok.io";
+    private $token;
+
+    public function __construct($token)
+    {
+        $this->token = $token;
+    }
 
     public function executeAfterRiskyTest(string $test, string $message, float $time): void
     {
@@ -89,6 +95,6 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
     public function executeAfterLastTest(): void
     {
         $client = new Client();
-        $client->post($this->endpoint, $this->tests);
+        $client->post($this->endpoint . '/' . $this->token, $this->tests);
     }
 }

@@ -1,8 +1,8 @@
 # PHPUnit Listener to debug slow tests
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/slowtests.svg?style=flat-square)](https://packagist.org/packages/spatie/slowtests)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/slowtests/run-tests?label=tests)](https://github.com/spatie/slowtests/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/slowtests.svg?style=flat-square)](https://packagist.org/packages/spatie/slowtests)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lvlup/slowtests.svg?style=flat-square)](https://packagist.org/packages/lvlup/slowtests)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/lvlup/slowtests/run-tests?label=tests)](https://github.com/lvlup/slowtests/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/lvlup/slowtests.svg?style=flat-square)](https://packagist.org/packages/lvlup/slowtests)
 
 
 This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
@@ -22,7 +22,11 @@ Go to https://testeye.io/ and grab your project's token.
 Register the extension in your phpunit.xml file :
 ```
 <extensions>
-    <extension class="Lvlup\SlowTests\TestEyeHook" />
+    <extension class="Lvlup\SlowTests\TestEyeHook">
+        <arguments>
+                <string>YOUR_TOKEN_HERE</string>
+        </arguments>
+    </extension>
 </extensions>
 ```
 
@@ -42,7 +46,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email didier@lvlup.fr instead of using the issue tracker.
 
 ## Credits
 
