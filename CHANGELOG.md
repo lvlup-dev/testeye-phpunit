@@ -3,6 +3,11 @@
 All notable changes to `testeye` will be documented in this file
 
 
+## 0.1.3 - 2020-06-24
+
+- fixed wrong outcome for some tests
+  
+
 ## 0.1.2 - 2020-06-24
 
 - fixed sending of post data with Guzzle

@@ -57,7 +57,7 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
     public function executeAfterSuccessfulTest(string $test, float $time): void
     {
         $this->tests[] = [
-            'outcome' => 'successfull',
+            'outcome' => 'successful',
             'test' => $test,
             'time' => $time,
         ];
@@ -86,7 +86,7 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
     public function executeAfterTestWarning(string $test, string $message, float $time): void
     {
         $this->tests[] = [
-            'outcome' => 'failure',
+            'outcome' => 'warning',
             'test' => $test,
             'message' => $message,
             'time' => $time,
