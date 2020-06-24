@@ -3,6 +3,11 @@
 All notable changes to `testeye` will be documented in this file
 
 
+## 0.1.5 - 2020-06-24
+
+- minor fixes
+
+
 ## 0.1.4 - 2020-06-24
 
 - changed API endpoint

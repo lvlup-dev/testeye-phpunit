@@ -104,7 +104,7 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
                 ],
             ]);
         } catch (Exception $e) {
-            dd($e->getMessage());
+            echo $e->getMessage()."\n";
         }
     }
 }

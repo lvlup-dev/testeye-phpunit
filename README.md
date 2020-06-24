@@ -1,8 +1,8 @@
 # PHPUnit Hooks to keep an eye on your tests, via TestEye.io
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/lvlup/testeye.svg?style=flat-square)](https://packagist.org/packages/lvlup/testeye)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/lvlup/testeye/run-tests?label=tests)](https://github.com/lvlup/testeye/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/lvlup/testeye.svg?style=flat-square)](https://packagist.org/packages/lvlup/testeye)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lvlup-dev/testeye.svg?style=flat-square)](https://packagist.org/packages/lvlup-dev/testeye)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/lvlup-dev/testeye/run-tests?label=tests)](https://github.com/lvlup-dev/testeye/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/lvlup-dev/testeye.svg?style=flat-square)](https://packagist.org/packages/lvlup-dev/testeye)
 
 
 This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
