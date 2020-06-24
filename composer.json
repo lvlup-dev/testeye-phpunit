@@ -1,12 +1,12 @@
 {
-    "name": "lvlup-dev/slowtests",
-    "description": "PHPUnit Listener to debug slow tests",
+    "name": "lvlup-dev/testeye",
+    "description": "PHPUnit Hooks to keep an eye on your tests, via TestEye.io",
     "keywords": [
         "lvlup",
         "phpunit",
-        "slowtests"
+        "testeye"
     ],
-    "homepage": "https://github.com/lvlup-dev/slowtests",
+    "homepage": "https://github.com/lvlup-dev/testeye",
     "license": "MIT",
     "authors": [
         {
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Lvlup\\SlowTests\\": "src"
+            "Lvlup\\TestEye\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lvlup\\SlowTests\\Tests\\": "tests"
+            "Lvlup\\TestEye\\Tests\\": "tests"
         }
     },
     "scripts": {
