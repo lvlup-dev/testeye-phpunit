@@ -25,6 +25,7 @@ Register the extension in your phpunit.xml file :
     <extension class="Lvlup\TestEye\TestEyeHook">
         <arguments>
                 <string>YOUR_TOKEN_HERE</string>
+                <string>https://testeye.io/report/phpunit</string>
         </arguments>
     </extension>
 </extensions>

@@ -16,12 +16,13 @@ use PHPUnit\Runner\AfterTestWarningHook;
 class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterSkippedTestHook, AfterSuccessfulTestHook, AfterTestErrorHook, AfterTestFailureHook, AfterTestWarningHook, AfterLastTestHook
 {
     private $tests;
-    private $endpoint = "https://2f58e3b96ad5.ngrok.io/report";
+    private $endpoint;
     private $token;
 
-    public function __construct($token)
+    public function __construct($token, $endpoint)
     {
         $this->token = $token;
+        $this->endpoint = $endpoint;
     }
 
     public function executeAfterRiskyTest(string $test, string $message, float $time): void
