@@ -3,6 +3,10 @@
 All notable changes to `testeye` will be documented in this file
 
 
+## 0.1.6 - 2020-06-25
+
+- added endpoint url in phpunit.xml
+
 ## 0.1.5 - 2020-06-24
 
 - minor fixes
