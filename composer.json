@@ -1,12 +1,12 @@
 {
-    "name": "lvlup-dev/testeye",
+    "name": "lvlup-dev/testeye-phpunit",
     "description": "PHPUnit Hooks to keep an eye on your tests, via TestEye.io",
     "keywords": [
         "lvlup",
         "phpunit",
         "testeye"
     ],
-    "homepage": "https://github.com/lvlup-dev/testeye",
+    "homepage": "https://github.com/lvlup-dev/testeye-phpunit",
     "license": "MIT",
     "authors": [
         {

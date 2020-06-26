@@ -2,6 +2,10 @@
 
 All notable changes to `testeye` will be documented in this file
 
+## 0.2.0 - 2020-06-26
+
+- changed package name and updated documentation
+  
 
 ## 0.1.6 - 2020-06-25
 
