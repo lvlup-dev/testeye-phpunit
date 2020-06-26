@@ -128,7 +128,7 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
                 return strpos($line, "PRETTY_NAME") !== false;
             });
 
-            if (!isset($prettyNameRow[0])) {
+            if (! isset($prettyNameRow[0])) {
                 throw new Exception();
             }
 
@@ -137,9 +137,9 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
             $prettyName = explode("=", $prettyNameRow);
 
             return trim($prettyName[1], "\"\r\n\t");
-
         } catch (\Exception $e) {
             echo "TestEye : Could not determine Linux distribution.\n";
+
             return '';
         }
     }
