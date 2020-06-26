@@ -96,16 +96,51 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
 
     public function executeAfterLastTest(): void
     {
+        $system = [];
+        $system['version'] = PHP_MAJOR_VERSION . "." . PHP_MINOR_VERSION;
+
+        $system['os'] = php_uname('s');
+        $isLinux = strtolower(substr($system['os'], 0, 5)) === 'linux';
+        if ($isLinux) {
+            $system['os'] = $this->guessLinuxDistributionName();
+        }
+
         $client = new Client();
 
         try {
             $client->post($this->endpoint . '/' . $this->token, [
                 'form_params' => [
                     'tests' => $this->tests,
+                    'system' => $system,
                 ],
             ]);
         } catch (Exception $e) {
-            echo $e->getMessage()."\n";
+            echo $e->getMessage() . "\n";
+        }
+    }
+
+    private function guessLinuxDistributionName(): string
+    {
+        try {
+            $etcOsRelease = file('/etc/os-release');
+
+            $prettyNameRow = array_filter($etcOsRelease, function ($line) {
+                return strpos($line, "PRETTY_NAME") !== false;
+            });
+
+            if (!isset($prettyNameRow[0])) {
+                throw new Exception();
+            }
+
+            $prettyNameRow = $prettyNameRow[0];
+
+            $prettyName = explode("=", $prettyNameRow);
+
+            return trim($prettyName[1], "\"\r\n\t");
+
+        } catch (\Exception $e) {
+            echo "TestEye : Could not determine Linux distribution.\n";
+            return '';
         }
     }
 }

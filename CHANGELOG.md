@@ -2,6 +2,12 @@
 
 All notable changes to `testeye` will be documented in this file
 
+
+## 0.3.0 - 2020-06-27
+
+- added system info to Hook in order to better reconcile test Batches
+
+
 ## 0.2.0 - 2020-06-26
 
 - changed package name and updated documentation
