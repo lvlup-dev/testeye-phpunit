@@ -2,6 +2,10 @@
 
 All notable changes to `testeye` will be documented in this file
 
+## 0.3.1 - 2020-06-27
+
+- cleanup endpoint and token parameters
+  
 
 ## 0.3.0 - 2020-06-27
 

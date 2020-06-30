@@ -21,8 +21,8 @@ class TestEyeHook implements AfterIncompleteTestHook, AfterRiskyTestHook, AfterS
 
     public function __construct($token, $endpoint)
     {
-        $this->token = $token;
-        $this->endpoint = $endpoint;
+        $this->endpoint = trim($endpoint, " \r\n\t");
+        $this->token = trim($token, " \r\n\t");
     }
 
     public function executeAfterRiskyTest(string $test, string $message, float $time): void
